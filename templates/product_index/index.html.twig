@@ -9,8 +9,8 @@
         
         {% for product in products %}
           <div class="col-md-4">
-            <h2> <a class="link" href="{{ path('product_detail') }}">{{product.name}} <span class="sr-only">(current)</span></a> </h2>
-            <p>{{product.price}}</p>
+            <h3> <a class="link" href="{{ path('product_detail') }}">{{product.name}} <span class="sr-only">(current)</span></a> </h3>
+            <p>{{product.price}} Kč</p>
             <p><a class="btn btn-secondary" href="#" role="button">Objednat </a></p>
           </div>
       
