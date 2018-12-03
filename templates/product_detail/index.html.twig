@@ -1,0 +1,28 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Produkty: {{ controller_name }}!{% endblock %}
+
+{% block body %}
+
+      <div class="jumbotron">
+        <div class="row">
+        
+        {% for product in products %}
+          <div class="col-md-12">
+            <h2{{product.name}}</h2>
+            <p>{{product.description}}</p>
+            <p>{{product.numberofitems}}</p>
+            <p>{{product.price}}</p>
+            <p><a class="btn btn-secondary" href="#" role="button">Objednat </a></p>
+          </div>
+      
+        {% endfor %}
+        
+        </div>
+
+        <hr>
+
+      </div>
+
+
+{% endblock %}
